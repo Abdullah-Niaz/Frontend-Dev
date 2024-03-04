@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    th,td{
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+</style>
+<body>
+    <table >
+        <caption>Employess</caption>
+        <colgroup>
+            <col span="2" style="background-color:red">
+            <col style="background-color:yellow">
+          </colgroup>
+        <thead style="border:2px solid black">
+            <tr>
+                <th>Person 1</th>
+                <th>Person 2</th>
+                <th>Person 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Emil</td>
+                <td>Tobias</td>
+                <td>Linus</td>
+              </tr>
+              <tr>
+                <td>16</td>
+                <td>14</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td colspan="3">20</td>
+                <!-- <td></td>
+                <td></td> -->
+              </tr>
+        </tbody>
+    </table>
+</body>
+</html>
