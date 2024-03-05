@@ -1,0 +1,11 @@
+Display Properties:
+
+    Block
+        Takes up the full width
+    Inline 
+        Takes up on the required width
+    Inline-Block
+        Allows the next upcoming to adjust in that line
+
+
+
