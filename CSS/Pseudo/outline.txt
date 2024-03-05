@@ -1,0 +1,12 @@
+Pseduo Elements: 
+    ::before
+    ::after
+    ::first-letter
+    ::first-line
+    ::selection
+
+Pseduo-classes
+    :hover
+    :active
+    :focus
+    :nth-child(n)
