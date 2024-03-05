@@ -1,0 +1,60 @@
+h1{
+    display: inline;
+    background-color: blue;
+}
+h2{
+    background-color: rebeccapurple;
+    display: inline;
+}
+span{
+    font-size: larger;
+    font-family: sans-serif;
+    font-size: 50px;
+    background-color: green;
+    display: block;
+}
+
+
+.box1{
+    display: inline-block;
+    background-color: blue;
+    width: 10em;
+    height: 4em;
+    position: absolute;
+}
+.box2{
+    display: inline-block;
+    background-color: rgb(7, 7, 59);
+    width: 10em;
+    height: 4em;
+}
+
+
+#one{
+    font-size:20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card1{
+    position: relative;
+    margin-bottom: 1em;
+    background-color: blueviolet;
+    width: 10em;
+    height: 10em;
+}
+.card2{
+    margin-bottom: 1em;
+    background-color: rgb(93, 69, 114);
+    width: 14em;
+    position: absolute;
+    height: 12em;
+    z-index: 1;
+}
+.card3{
+    position: absolute;
+    background-color: rgb(21, 167, 133);
+    width: 20em;
+    height: 10em;
+}
