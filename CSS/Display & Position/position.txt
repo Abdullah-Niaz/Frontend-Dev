@@ -1,0 +1,17 @@
+position
+    relative 
+
+
+let say, ap n ak box ko absolute bnya, ab wo uth kar kehy b 
+ja sakta ha apny marzi sy, 
+agar hum us ki marzi ko restrict karna chahy, or usy bound 
+karna chahy ak box/panjry k andher t pher hum,
+us ka jo parent box/panjra ha us ko relative bna dety hn
+ur us ko kehty hn, bahi tu sirf is box k ander he move kar sakta ha 
+
+
+Qabotar ki misal lety hn,
+    ak bary sy panjry k ander chota sa panjra rakhty hn 
+    us panjry ki jo khirki ha wo hum khuli chor dety hn 
+    ur Qabotar ki to parwaz ha us ko restrict kar dety hn 
+    bary panjry k andher, i hope you got it 😎 
