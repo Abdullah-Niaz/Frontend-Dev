@@ -1,0 +1,19 @@
+.outer{
+    background-color: blueviolet;
+    height: 20em;
+    width: 30em;
+    position: relative;
+    border-radius: 10%;
+    border: 2px solid blue;
+}
+
+.inner{
+    position: absolute;
+    border-radius: 10%;
+    border: 2px solid blue;
+    left: 50%;
+    top: 20%;
+    background-color: yellow;
+    height: 10em;
+    width: 10em;
+}
