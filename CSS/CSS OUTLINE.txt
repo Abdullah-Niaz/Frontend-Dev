@@ -1,0 +1,38 @@
+setup
+	inline, internal, external
+color
+font-family
+font-size
+line-height
+text-align
+padding
+margin 
+border
+display
+position
+background
+flex
+pseudu-elements
+pseudo-classes
+
+
+animation
+media queries
+
+
+
+
+UNITS:
+	- px are fixed on the screen
+	- % setup according to the parent 
+	- vh,vw, setup according to screen
+	- em, one em = 16px of parent, if we can change the parent font
+	- rem(root empharial unit) is accourding to the screen 
+	- Max-width: it will not excede to the maxi
+	- min-width: it will not decrease to the mini
+
+
+Font-Family:
+	- Sans-Serif 
+
+	- Serif 
