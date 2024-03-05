@@ -1,3 +1,6 @@
+Her element ke pass ek possibility hoti hai k wo element chaahe to 
+inactive ho jay, or active ho jay
+
 Pseduo Elements: 
     ::before
     ::after
@@ -6,7 +9,7 @@ Pseduo Elements:
     ::selection
 
 Pseduo-classes
-    :hover
-    :active
-    :focus
-    :nth-child(n)
+    :hover (paragraphs, images, textx)
+    :active (buttons)
+    :focus (inputs)
+    :nth-child(n) (for no selection)

@@ -1,0 +1,38 @@
+p::before{
+    /* content: ">"; */
+}
+
+p::first-letter{
+    /* font-size: 100px; */
+}
+
+p::first-line{
+    /* background-color: blue; */
+    width: fit-content;
+}
+
+p::selection{
+    background-color: green;
+}
+
+
+
+button:hover{
+    background-color: green;
+}
+button:visited{
+    background-color: pink;
+}
+button:active{
+    background-color: blue;
+}
+
+input:focus{
+    background-color: greenyellow;
+}
+
+
+p:nth-child(even){
+    color: white;
+    background-color: black;
+}
