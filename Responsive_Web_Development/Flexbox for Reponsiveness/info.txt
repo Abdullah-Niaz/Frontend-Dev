@@ -1,0 +1,4 @@
+Flexbox is used to aligin the items in single direction
+
+aligin item = along y axis
+justify content = along x axis
