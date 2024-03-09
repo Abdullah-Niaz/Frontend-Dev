@@ -1,0 +1,20 @@
+laptop ---> Landscape
+Mobile ---> Portrait
+
+
+Understating Units
+    - px
+    - %
+    - vh, vw
+    - vmax, vmin
+    - vmax, vmin 
+    - em, rem
+
+Layout of website
+    - absolute vs flex
+
+flexbox
+    - Display flex
+    - Aligning items in x and y axis
+    - flex direction
+    - flex wrap
