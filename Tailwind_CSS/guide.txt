@@ -1,0 +1,12 @@
+1. Go to the tailwindcss.com webiste
+2. Just copy the playcdn script file
+3. Paste it into your boilerplate head.
+
+
+Tailwind:
+    1. You don't need to write css by scratch.
+    2. You just need to mention the class
+    3. You have to target break points and devices in order for Tailwind CSS
+    4. Mobile First Screen:
+        In Tailwind we target Mobile screen , then laptop, tablet.
+    (Whenever, you write a class inside tailwind css, just think/image that we are targeting mobile screen)
