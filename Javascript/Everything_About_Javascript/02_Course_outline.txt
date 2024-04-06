@@ -1,0 +1,21 @@
+basics [
+    js the language 
+    understanding DOM
+    basics
+    inbuilt features
+    vaiables constants
+    compilers and interpreters
+    widnows
+    types
+    consitionals 
+    loops 
+    functions
+    array 
+    objects
+]
+advance[
+    Prototypal inheritance
+    asynchronous
+    es6 climax
+]
+    questions
