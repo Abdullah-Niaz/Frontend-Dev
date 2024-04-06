@@ -2,6 +2,7 @@
 2. Just copy the playcdn script file
 3. Paste it into your boilerplate head.
 
+Tailwind is similar to other framework like bootstrap
 
 Tailwind:
     1. You don't need to write css by scratch.
