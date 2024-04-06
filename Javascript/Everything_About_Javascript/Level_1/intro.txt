@@ -1,0 +1,32 @@
+JS is developed by Brandom in 20 days
+There was a lots of issue in first.
+
+Now ES6 mean Ecma Script still manages js 
+    updating features
+    new update
+    developmenet of js language
+
+js 
+    1. ES5
+        var
+    2. ES6
+        let  and const  
+
+
+Compiler compiles it line by line
+
+
+
+consoles
+    console.log("hello World"); // to print something in console to userend
+    console.error(err);// for error message
+    console.alert(msg)// for alert box
+
+alert
+    alert("Hello You're copying ")
+
+
+prompt
+    prompt ("Enter your name")
+    var n = prompt("Enter your name","John Doe")
+    console.log(n);
