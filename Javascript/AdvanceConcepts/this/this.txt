@@ -1,0 +1,14 @@
+* This Call apply bind
+* this keyword js mein one ot the most suspenseful keyword
+* keyword ka matlab ho programming language me
+* this ki value bar bar badal sakti ha alag alag conditions meain. 
+
+
+This Cases Scenario:
+    Global value: - window 
+    Fucntion value - window 
+    Method value  - Object 
+    Functions Inside  Method (es5) - window 
+    Functions Inside Method (es6) - object
+    Inside Constructor Fucntion Value  - new blank object 
+    Event Listener value  - that element jis par event lag raha ho 
