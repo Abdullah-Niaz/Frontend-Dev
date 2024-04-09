@@ -1,0 +1,7 @@
+Understanding this call apply bind 
+Prototypal Inheritance 
+Closures
+Event Delegation
+Higher Order Functions
+Error Handling (Try.....Catch Blocks)
+Custom Events
