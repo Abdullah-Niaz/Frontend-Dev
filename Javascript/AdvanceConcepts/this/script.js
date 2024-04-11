@@ -72,11 +72,29 @@
 
 
 
-const objj = {
-    name : "Ali",
-    age : 20,
-    sayName : function(){
-        console.log(this);
-    }
-}
-objj.sayName();
+// const objj = {
+//     name : "Ali",
+//     age : 20,
+//     sayName : function(){
+//         console.log(this);
+//     }
+// }
+// objj.sayName();
+
+
+// What is the value of this inside the constructor Function  -- new blank object 
+
+// function add(){
+//     console.log(this);
+// }
+// const ans = new add();
+
+// Value of this inside the constructor function 
+document.querySelector("button").addEventListener("Click",function (){
+    console.log(this);
+})
+
+
+
+
+
