@@ -35,17 +35,36 @@
 // obj.name();
 
 // Function inside Fucntion - object (es6)
+// Functions in es6 takes up the value from the parent 
+// if the parent is window, then it will become window
+// if the parent is object, then it will become object
 
-var obj = {
-    rol: 20,
-    class:10,
-    name : function(){
+// var obj = {
+//     rol: 20,
+//     class:10,
+//     name : function(){
+//         console.log(this);
+//         const child = () => {
+//             console.log(this);
+//         }
+//         child();
+//     }
+// }
+
+// obj.name();
+
+const obj = {
+    name : function add(){
+        // returning es5 Function 
         console.log(this);
-        const child = () => {
-            console.log(this);
-        }
-        child();
     }
+    
+    // returning es6 Function 
+    // which takes es6 value from the parent 
+    // helo  : ()=>{
+    //     console.log("Value of Var in  inside es6:  " + this);
+    // }
 }
 
 obj.name();
+// obj.helo();
