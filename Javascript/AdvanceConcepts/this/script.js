@@ -53,18 +53,30 @@
 
 // obj.name();
 
-const obj = {
-    name : function add(){
-        // returning es5 Function 
-        console.log(this);
-    }
+// const obj = {
+//     name : function add(){
+//         // returning es5 Function 
+//         console.log(this);
+//     }
     
     // returning es6 Function 
     // which takes es6 value from the parent 
     // helo  : ()=>{
     //     console.log("Value of Var in  inside es6:  " + this);
     // }
-}
+// }
 
-obj.name();
+// obj.name();
 // obj.helo();
+
+
+
+
+const objj = {
+    name : "Ali",
+    age : 20,
+    sayName : function(){
+        console.log(this);
+    }
+}
+objj.sayName();
