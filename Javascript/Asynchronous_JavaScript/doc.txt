@@ -1,0 +1,8 @@
+Synchronous : Main Stack -> if there is any process existeted in the main stack, it will be executed one by until it becomes empty.
+
+Asynchronous : Side / Call Stack then the process is taken one by one from the Call stack to  main stack for the execution. 
+
+
+Event Loop checks for the emptiness of the main Stack. if it is empty then it will take up the process from the call / Side stack to the main stack for execution.
+
+
