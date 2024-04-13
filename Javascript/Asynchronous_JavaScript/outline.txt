@@ -1,0 +1,3 @@
+Asynchronous Js 
+## Asa Koi b code jis mein kuch time lata ha, js main usy code ko 
+by default call/side stack m rakh dea jata ha 
