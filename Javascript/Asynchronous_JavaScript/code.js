@@ -20,7 +20,7 @@
 //     if(count === 5){
 //         // hmarinter(setInterval);
 //         clearInterval(hmarinter);
-//     }
+//     } 
 // }, 1000);
 
 // we can stop the setINterval 
