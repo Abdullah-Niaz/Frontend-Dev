@@ -1,3 +1,12 @@
 Asynchronous Js 
 ## Asa Koi b code jis mein kuch time lata ha, js main usy code ko 
 by default call/side stack m rakh dea jata ha 
+
+settimeout  - settimeout ka code kuch der bad chalta ha
+setinterval  - set interevel ka code kuch der k bad chlata ha, ek particular interval time mein
+Fetch API   - y kisi jagha sy data fetch karta ha ya pher hmary site sy data waha ly kar jay ga
+AXios (or other HTTP Libraries) y b wahi kary ga jo Fetch API karta ha. but thora zyda developer friendly ha
+Promise - y janab k ander jo b code likho gy wo apna kam kary ga, ur khud side side stack m chila jayega code ko ly kar 
+
+y sabhi use hi us waqat kiay jaty, jab ap n kuch asa karna ho jis m kuch time lage
+
