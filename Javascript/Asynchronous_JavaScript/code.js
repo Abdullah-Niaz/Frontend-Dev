@@ -6,7 +6,7 @@
 // console.log("Hello World 2");
 // setTimeout(() => {
 //     console.log("Hello World");
-// }, 1000);
+// }, 1000); 
 // console.log("Hello World 3");
 // console.log("Hello World 4");
 
