@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Increment Counter</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f0f0f0;
+      }
+      h1 {
+        font-size: 3em;
+        margin-bottom: 20px;
+      }
+      button {
+        padding: 10px 20px;
+        font-size: 1em;
+        cursor: pointer;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+      }
+      button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="incre">0</h1>
+    <div>
+      <button type="button" onclick="increment()">Increment</button>
+      <button type="button" onclick="Decrement()">Decrement</button>
+      <button type="button" onclick="Reset()">Reset</button>
+    </div>
+
+    <script>
+      const conterElement = document.getElementById("incre");
+
+      function increment() {
+        let currentVal = parseInt(conterElement.textContent);
+        currentVal += 1;
+        conterElement.textContent = currentVal;
+      }
+      function Decrement() {
+        let currentVal = parseInt(conterElement.textContent);
+        if (currentVal >0){
+            currentVal -= 1;
+        }
+        conterElement.textContent = currentVal;
+      }
+      function Reset(){
+        let currentVal = parseInt(conterElement.textContent);
+        currentVal = 0;
+        conterElement.textContent = currentVal;
+    }
+    </script>
+  </body>
+</html>
