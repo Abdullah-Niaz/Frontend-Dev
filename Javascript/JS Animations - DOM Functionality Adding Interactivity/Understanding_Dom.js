@@ -19,8 +19,10 @@
 // btn.innerHTML = "<i>Hello World</i>";
 
 
-var btn = document.querySelector("button");
-btn.style.color="red"
-btn.style.fontFamily="Roboto"
-btn.style.fontSize = "20px"
+// var btn = document.querySelector("button");
+// btn.style.color="red"
+// btn.style.fontFamily="Roboto"
+// btn.style.fontSize = "20px"
 
+var btn = document.querySelector("button");
+btn.classList.add("makeit");
