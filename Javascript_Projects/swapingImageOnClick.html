@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Swap Images</title>
+</head>
+<style>
+
+</style>
+<body>
+
+    <div class="container-fluid ">
+        <img id="one" src="https://bityl.co/Qsny" alt="">
+        <img id="two" src="https://bityl.co/Qsnr" alt="">
+    </div>
+    <br>
+    <div class="container-fluid d-flex justify-content-center align-items-center">
+        <button class="btn btn-outline-primary">Change</button>
+    </div>
+    
+    <script>
+      var btn = document.querySelector("button");
+      var img1 = document.querySelector("#one");
+      var img2 = document.querySelector("#two");
+      document.addEventListener('click',function () {
+        var src1 = img1.src;
+        var src2 = img2.src;
+
+        img1.src = src2;
+        img2.src = src1;
+      })
+    </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
