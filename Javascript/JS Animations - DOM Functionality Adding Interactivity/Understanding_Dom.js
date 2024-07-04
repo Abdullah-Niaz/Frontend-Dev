@@ -6,14 +6,21 @@
 // }
 
 
-var btn = document.getElementsByName("button");
+// var btn = document.getElementsByName("button");
 
-for (let i = 0; i < btn.length; i++) {
-        btn[i].textContent = "Done...";
-    }
+// for (let i = 0; i < btn.length; i++) {
+//         btn[i].textContent = "Done...";
+//     }
     
-var btn = document.querySelector("button")
-btn.textContent  = "Done."
+// var btn = document.querySelector("button")
+// btn.textContent  = "Done."
+
+// var btn = document.querySelector("button");
+// btn.innerHTML = "<i>Hello World</i>";
+
 
 var btn = document.querySelector("button");
-btn.innerHTML = "<i>Hello World</i>";
+btn.style.color="red"
+btn.style.fontFamily="Roboto"
+btn.style.fontSize = "20px"
+
