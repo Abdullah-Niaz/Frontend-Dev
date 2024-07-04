@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change the paragraph text on button click </title>
+</head>
+<style>
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+        padding: 10px;
+        width: fit-content;
+        height:fit-content;
+        background-color: gray;
+    }
+
+</style>
+<body>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, dicta temporibus! Beatae magni blanditiis fugit! Quos vitae dolorem quibusdam tempore rem molestiae sit architecto ex laudantium totam! Commodi, placeat quisquam.</p>
+        <button>Click me </button>
+    </div>
+    <script>
+        var button = document.querySelector('button');
+        var div = document.querySelector("div");
+        var p = document.querySelector("p");
+        button.addEventListener('click',function(){
+            div.classList.add("container")
+            p.textContent = " Change has been done ";
+        })
+    </script>
+</body>
+</html>
