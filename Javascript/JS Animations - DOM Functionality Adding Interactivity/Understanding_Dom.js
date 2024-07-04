@@ -15,5 +15,5 @@ for (let i = 0; i < btn.length; i++) {
 var btn = document.querySelector("button")
 btn.textContent  = "Done."
 
-// var btn = document.querySelector("button");
-// btn.innerHTML = "<i>Hello World</i>";
+var btn = document.querySelector("button");
+btn.innerHTML = "<i>Hello World</i>";
