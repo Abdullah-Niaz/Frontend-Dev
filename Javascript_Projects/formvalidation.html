@@ -22,17 +22,17 @@
             var allFilled = true;
             for (var i = 0; i < inp.length; i++) {
                 if (inp[i].value === "") {
-                    h1.textContent = "Fill all the fields";
-                    // allFilled = false;
+                    allFilled = false;
                     break;
                 }
             }
-            // if (!allFilled) {
-            //     h1.style.color = 'blue';
-            // } else {
-            //     h1.textContent = "All fields are filled!";
-            //     h1.style.color = 'green';
-            // }
+            if (!allFilled) {
+                h1.textContent = "Fill all the fields";
+                h1.style.color = 'blue';
+            } else {
+                h1.textContent = "All fields are filled!";
+                h1.style.color = 'green';
+            }
         })
 
         // form.addEventListener('submit',function(ev){
