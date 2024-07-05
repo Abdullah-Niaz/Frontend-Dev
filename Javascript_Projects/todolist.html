@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .input-group {
+            margin-bottom: 20px;
+        }
+        ul {
+            padding-left: 0;
+            list-style: none;
+        }
+        ul li {
+            padding: 10px;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="text-center">Todo List</h1>
+        <div class="input-group">
+            <input type="text" id="item" class="form-control" placeholder="Add a new item">
+            <div class="input-group-append">
+            </div>
+        </div>
+        <div class="text-center">
+            <button id="add" class="btn btn-primary px-3">Add</button>
+            <button id="remove" class="btn btn-danger">Remove Last</button>
+        </div>
+        <ul class="mt-4"></ul>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        var add = document.querySelector("#add");
+        var remove = document.querySelector("#remove");
+        var item = document.querySelector("#item");
+        var ul = document.querySelector("ul");
+
+        add.addEventListener("click",function(){
+            if(item.value.trim() === ""){}
+            else{
+                var li = document.createElement("li");
+                li.textContent = item.value;
+                ul.appendChild(li);
+                item.value = ""
+            }
+        });
+
+        remove.addEventListener("click",function(){
+            if(ul.lastChild){
+                ul.removeChild(ul.lastChild);
+            }
+        })
+    </script>
+</body>
+</html>
