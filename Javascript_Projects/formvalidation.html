@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+    <h1></h1>
+    <form action="">
+        <input id="inp1" type="text" name="" id="">
+        <input id="inp2" type="text" name="" id="">
+        <input type="submit">
+    </form>
+
+    <script>
+        var form = document.querySelector("form");
+        var inp = document.querySelectorAll('input[type="text"]');
+        var h1 = document.querySelector('h1');
+        form.addEventListener('submit',function(ev){
+            ev.preventDefault();
+            var allFilled = true;
+            for (var i = 0; i < inp.length; i++) {
+                if (inp[i].value === "") {
+                    h1.textContent = "Fill all the fields";
+                    // allFilled = false;
+                    break;
+                }
+            }
+            // if (!allFilled) {
+            //     h1.style.color = 'blue';
+            // } else {
+            //     h1.textContent = "All fields are filled!";
+            //     h1.style.color = 'green';
+            // }
+        })
+
+        // form.addEventListener('submit',function(ev){
+        //     ev.preventDefault();
+        //     if(inp1.value==="" || inp2.value===""){
+        //         h1.textContent="Fil the fields of form";
+        //         h1.style.color = "blue";
+        //         alert("please fill the form, one ore more field is empty");
+        //     }
+        //     else{
+        //         alert("form is submitted");
+        //     }
+    </script>
+</body>
+</html>
