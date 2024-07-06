@@ -1,26 +1,33 @@
-var buttons = document.querySelectorAll("#home, #about, #contact");
-var texts = document.querySelectorAll("#hometext, #abouttext, #contacttext");
+document.addEventListener('DOMContentLoaded', function() {
+    var buttons = document.querySelectorAll("#home, #about, #contact");
+    var texts = document.querySelectorAll("#hometext, #abouttext, #contacttext");
 
-function sartexthatao() {
-    texts.forEach(function(text) {
-        text.style.display = "none";
-    });
-}
+    function sartexthatao() {
+        texts.forEach(function(text) {
+            text.style.display = "none";
+        });
+    }
 
-function showText(text) {
-    sartexthatao();
-    text.style.display = "block";
-    text.style.width = "50%";
-}
+    function showText(text) {
+        sartexthatao();
+        text.style.display = "block";
+        text.style.width = "100%";
+    }
 
-// Initially show the home text
-showText(document.querySelector("#hometext"));
+    // Initially show the home text
+    showText(document.querySelector("#hometext"));
 
-buttons.forEach(function(button) {
-    button.addEventListener("click", function () {
-        var textId = "#" + this.id + "text";
-        var text = document.querySelector(textId);
-        showText(text);
+    buttons.forEach(function(button) {
+        button.addEventListener("click", function (event) {
+            event.preventDefault();
+            buttons.forEach(function(btn) {
+                btn.classList.remove('active');
+            });
+            button.classList.add('active');
+            var textId = "#" + this.id + "text";
+            var text = document.querySelector(textId);
+            showText(text);
+        });
     });
 });
 
