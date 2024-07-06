@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Button</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .counter-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+        .counter-display {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .counter-buttons button {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container counter-container">
+        <h2 class="counter-display">0</h2>
+        <div class="counter-buttons">
+            <button id="start" class="btn btn-success">Start</button>
+            <button id="stop" class="btn btn-danger">Stop</button>
+        </div>
+    </div>
+    <script>
+        var start = document.querySelector("#start");
+        var stop = document.querySelector("#stop");
+        var h2 = document.querySelector("h2");
+        
+        var count = 0;
+        start.addEventListener("click", function(){
+            int = setInterval(function(){
+                h2.textContent = count;
+                count++;
+            }, 1);
+        });
+
+        stop.addEventListener("click", function(){
+            clearInterval(int);
+        });
+    </script>
+</body>
+</html>
