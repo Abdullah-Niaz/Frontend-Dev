@@ -1,0 +1,12 @@
+GSAP:
+    GreenShock Animation Paltform
+    GSAP is used for moving animation 
+
+
+
+
+
+loco Motive Js:
+
+
+Textlit js
