@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>GSAP Trigger | PIN`</title>
+</head>
+<body>
+    <div id="page1"></div>
+    <div id="page2">
+        <img src="https://bityl.co/QwVH" alt="">
+    </div>
+    <div id="page3"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-FyIbEzDXCCay2FD2ge9qHV45Mlz0u6Rb3ehvQv5Ne0d2mpXEskM8PQVu+deCB7ri7VHeGujanKPylt6VnhDx3A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script src="script.js"></script> -->
+    <script>
+        gsap.to("#page2 img", {
+            width: "100%",
+            scrollTrigger: {
+                trigger: "#page2",
+                scroller: "body", // Only needed if you have a custom scroller
+                start: "top 0", // When the top of #page2 hits the top of the viewport
+                end: "bottom top", // When the bottom of #page2 hits the top of the viewport
+                markers: true, // For debugging purposes
+            }   
+        });
+
+    </script>
+</body>
+</html>
