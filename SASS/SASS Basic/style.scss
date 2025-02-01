@@ -1,0 +1,139 @@
+// Variables
+$primary1: #a2b9bc;
+$primary2: #000000;
+$primary3: #0073ff;
+
+$myFont: Helvetica, sans-serif;
+$myColor: red;
+$myFontSize: 18px;
+$borderColor: green;
+$dark-mode: true;
+
+
+// Variables
+$light-bg: #ffffff;
+$light-text: #000000;
+$dark-bg: #121212;
+$dark-text: #ffffff;
+// Global Styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $myFont;
+  font-size: $myFontSize;
+  color: $myColor;
+  @if $dark-mode {
+      background-color: #222;
+      color: white;
+    }
+  
+    @else {
+      background-color: white;
+      color: black;
+    }
+}
+
+// Header
+#top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: $primary3;
+  color: wheat;
+}
+
+// Navigation Menu
+#menu {
+  ul {
+    display: flex;
+    width: 300px;
+    align-items: center;
+    margin-right: 40px;
+    justify-content: space-between;
+    list-style: none;
+  }
+
+  li {
+    margin: 10px;
+    text-align: center;
+  }
+
+  a {
+    display: block;
+    color: wheat;
+    text-decoration: none;
+
+    &:hover {
+      color: red;
+      background-color: blueviolet;
+      border-radius: 20%;
+    }
+  }
+}
+
+
+// Default Theme
+body {
+  background-color: $light-bg;
+  color: $light-text;
+  transition: background 0.3s, color 0.3s;
+}
+
+// Dark Mode Styles
+body.dark-mode {
+  background-color: $dark-bg;
+  color: $dark-text;
+}
+
+// Dark Mode Button
+#dark-mode-toggle {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: $light-text;
+
+  &:hover {
+    color: $dark-text;
+  }
+}
+
+body.dark-mode #dark-mode-toggle {
+  color: $dark-text;
+}
+
+// Container
+#container {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  padding: 20px;
+  border: 2px solid $borderColor;
+}
+
+// Blog Section
+#blog {
+  background-color: $primary1;
+  padding: 20px;
+  margin: 10px;
+  color: $primary2;
+
+  h1 {
+    color: $primary3;
+    text-align: center;
+  }
+}
+
+// Sidebar
+#contianerAside {
+  width: 600px;
+  background-color: #7a333325;
+  margin: 10px;
+  padding: 20px;
+  border: 2px solid $borderColor;
+}

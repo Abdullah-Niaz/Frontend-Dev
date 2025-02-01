@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>SASS Basic</title>
+  </head>
+  <body>
+    <header id="top">
+      <div class="logo">
+        <h1>My Website</h1>
+      </div>
+      <nav id="menu">
+        <ul>
+          <li><a href="#">Hello 1</a></li>
+          <li><a href="#">Hello 2</a></li>
+          <li><a href="#">Hello 3</a></li>
+        </ul>
+      </nav>
+      <button id="dark-mode-toggle">🌙</button>
+      <!-- Dark Mode Button -->
+    </header>
+
+    <div id="container">
+      <div id="containerblog">
+        <div id="blog">
+          <h1>My Blog</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+            nulla sapiente dolorum, possimus optio ab nisi illum. Distinctio
+            voluptate minus repellendus neque quibusdam corporis libero.
+            Provident odio eum architecto voluptas?
+          </p>
+        </div>
+        <div id="blog">
+          <h1>My Blog</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+            nulla sapiente dolorum, possimus optio ab nisi illum. Distinctio
+            voluptate minus repellendus neque quibusdam corporis libero.
+            Provident odio eum architecto voluptas?
+          </p>
+        </div>
+        <div id="blog">
+          <h1>My Blog</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+            nulla sapiente dolorum, possimus optio ab nisi illum. Distinctio
+            voluptate minus repellendus neque quibusdam corporis libero.
+            Provident odio eum architecto voluptas?
+          </p>
+        </div>
+        <div id="blog">
+          <h1>My Blog</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+            nulla sapiente dolorum, possimus optio ab nisi illum. Distinctio
+            voluptate minus repellendus neque quibusdam corporis libero.
+            Provident odio eum architecto voluptas?
+          </p>
+        </div>
+        <div id="blog">
+          <h1>My Blog</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+            nulla sapiente dolorum, possimus optio ab nisi illum. Distinctio
+            voluptate minus repellendus neque quibusdam corporis libero.
+            Provident odio eum architecto voluptas?
+          </p>
+        </div>
+        <div id="blog">
+          <h1>My Blog</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+            nulla sapiente dolorum, possimus optio ab nisi illum. Distinctio
+            voluptate minus repellendus neque quibusdam corporis libero.
+            Provident odio eum architecto voluptas?
+          </p>
+        </div>
+        <div id="blog">
+          <h1>My Blog</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+            nulla sapiente dolorum, possimus optio ab nisi illum. Distinctio
+            voluptate minus repellendus neque quibusdam corporis libero.
+            Provident odio eum architecto voluptas?
+          </p>
+        </div>
+        <div id="blog">
+          <h1>My Blog</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+            nulla sapiente dolorum, possimus optio ab nisi illum. Distinctio
+            voluptate minus repellendus neque quibusdam corporis libero.
+            Provident odio eum architecto voluptas?
+          </p>
+        </div>
+        <div id="blog">
+          <h1>My Blog</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+            nulla sapiente dolorum, possimus optio ab nisi illum. Distinctio
+            voluptate minus repellendus neque quibusdam corporis libero.
+            Provident odio eum architecto voluptas?
+          </p>
+        </div>
+        <div id="blog">
+          <h1>My Blog</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+            nulla sapiente dolorum, possimus optio ab nisi illum. Distinctio
+            voluptate minus repellendus neque quibusdam corporis libero.
+            Provident odio eum architecto voluptas?
+          </p>
+        </div>
+        <div id="blog">
+          <h1>My Blog</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+            nulla sapiente dolorum, possimus optio ab nisi illum. Distinctio
+            voluptate minus repellendus neque quibusdam corporis libero.
+            Provident odio eum architecto voluptas?
+          </p>
+        </div>
+      </div>
+
+      <div id="contianerAside">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Services</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      const darkModeToggle = document.getElementById("dark-mode-toggle");
+      const body = document.body;
+
+      // Check if dark mode is stored in localStorage
+      if (localStorage.getItem("dark-mode") === "enabled") {
+        body.classList.add("dark-mode");
+      }
+
+      darkModeToggle.addEventListener("click", () => {
+        body.classList.toggle("dark-mode");
+
+        // Save preference in localStorage
+        if (body.classList.contains("dark-mode")) {
+          localStorage.setItem("dark-mode", "enabled");
+        } else {
+          localStorage.setItem("dark-mode", "disabled");
+        }
+      });
+    </script>
+  </body>
+</html>
