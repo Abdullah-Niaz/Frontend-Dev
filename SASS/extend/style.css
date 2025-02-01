@@ -1,0 +1,21 @@
+.button-basic,
+.button-submit,
+.button-report {
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+.button-basic {
+  background-color: blue;
+}
+
+.button-report {
+  background-color: red;
+}
+
+.button-submit {
+  background-color: green;
+  color: white;
+} /*# sourceMappingURL=style.css.map */
