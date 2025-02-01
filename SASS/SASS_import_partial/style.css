@@ -1,0 +1,21 @@
+body {
+  font-family: Helvetica, sans-serif;
+  color: #0073ff;
+}
+
+header {
+  background-color: #0073ff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer {
+  background-color: #ff5733;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+* {
+  background-color: green;
+}/*# sourceMappingURL=style.css.map */
