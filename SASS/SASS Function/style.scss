@@ -1,0 +1,45 @@
+// String function
+$text: "hello world";
+
+h1 {
+    content: to-upper-case($text);
+}
+
+// List function
+$colors: red, blue, green, yellow;
+
+h2 {
+    color: nth($colors, 3); // Output: green
+}
+
+// Map function
+$theme-colors: (
+    primary: blue,
+    secondary: red,
+    success: green
+);
+
+p {
+    color: map-get($theme-colors, primary);
+}
+
+// Selector function
+$base: ".btn";
+
+#{selector-append($base, "--primary")} {
+    background-color: blue;
+}
+
+// Introspection function
+$value: 42px;
+
+.introspection-example::after {
+    content: type-of($value);
+}
+
+// Color function
+$primary-color: #0073ff;
+
+button {
+    background-color: lighten($primary-color, 20%);
+}
