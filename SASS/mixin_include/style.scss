@@ -1,0 +1,34 @@
+@mixin rounded-corners($radius) {
+    border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+}
+
+
+.button {
+    @include rounded-corners(10px);
+    background-color: #0073ff;
+    color: white;
+}
+
+
+@mixin box-shadow($h-offset, $v-offset, $blur, $color) {
+    box-shadow: $h-offset $v-offset $blur $color;
+    -webkit-box-shadow: $h-offset $v-offset $blur $color;
+    -moz-box-shadow: $h-offset $v-offset $blur $color;
+}
+
+
+.card {
+    @include box-shadow(0, 4px, 8px, rgba(0, 0, 0, 0.2));
+    background-color: white;
+    padding: 20px;
+}
+
+.button-primary {
+    @include button($bg-color: #28a745, $text-color: white);
+}
+
+.button-secondary {
+    @include button; // Uses default values
+}
